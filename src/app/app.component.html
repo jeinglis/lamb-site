@@ -1,8 +1,14 @@
-<div id="content">
+<div class="webpage-container" (scroll)="onWindowScroll($event);">
   <app-navigation></app-navigation>
-  <app-banner></app-banner>
-  <app-info-card></app-info-card>
-  <app-info-card></app-info-card>
-  <app-info-card></app-info-card>
-  <app-info-card></app-info-card>
+  <app-banner id="banner"></app-banner>
+  <div class="card-container">
+    <app-info-card></app-info-card>
+    <app-info-card></app-info-card>
+    <app-info-card></app-info-card>
+    <app-info-card></app-info-card>
+    <app-info-card></app-info-card>
+    <app-info-card></app-info-card>
+    <app-info-card></app-info-card>
+    <app-info-card></app-info-card>
+  </div>
 </div>

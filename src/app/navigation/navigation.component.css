@@ -1,0 +1,42 @@
+#navbar {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  flex-direction: row;
+  height: 80px;
+  line-height: 80px;
+}
+
+span {
+  font-size: 1.4em;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  color: black;
+  border-style: none;
+  background-color: white;
+}
+
+span:hover {
+  color: rgb(19, 119, 49);
+}
+
+.link{
+  margin:auto;
+  cursor:pointer;
+}
+
+#logo {
+ width:100px;
+ padding:15px;
+ cursor:pointer;
+}
+
+.sticky {
+  background: #fff;
+  box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
+  position: fixed;
+  top: 0;
+  height: 120px;
+  width: 100%;
+}
