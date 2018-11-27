@@ -1,17 +1,17 @@
 <div id="navbar">
-  <a>
-    <img id="logo" src="../../assets/farm-icon.png">
+  <a routerLink="/info-card" routerLinkActive="active">
+    <img id="logo" src="../../assets/farm-icon-black.png">
   </a>
-  <a class="link">
+  <a class="link" routerLink="/info-card" [fragment]="'raised_organic'" routerLinkActive="active">
     <span>Raised Organic</span>
   </a>
-  <a class="link">
+  <a class="link" routerLink="/info-card" [fragment]="'ethically_treated'" routerLinkActive="active">
     <span>Ethically Treated</span>
   </a>
-  <a class="link">
+  <a class="link" routerLink="/info-card" [fragment]="'support_local'" routerLinkActive="active">
     <span>Support Local</span>
   </a>
-  <a class="link">
+  <a class="link" routerLink="/info-card" [fragment]="'contact_us'" routerLinkActive="active">
     <span>Contact Us</span>
   </a>
 </div>

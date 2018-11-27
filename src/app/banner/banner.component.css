@@ -29,7 +29,7 @@ video {
 
 #logo{
   animation-name: fadeIn;
-  animation-duration: 4s;
+  animation-duration: 7s;
   max-height: 100%;  
   max-width: 100%; 
   width: auto;

@@ -30,6 +30,7 @@ span:hover {
  width:100px;
  padding:15px;
  cursor:pointer;
+ text-decoration:none;
 }
 
 .sticky {
@@ -39,4 +40,9 @@ span:hover {
   top: 0;
   height: 120px;
   width: 100%;
+  z-index: 20;
+}
+
+.link{
+  text-decoration:none;
 }
