@@ -8,6 +8,7 @@ import { InfoCardComponent } from './info-card/info-card.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
+import { SlideshowComponent } from './slideshow/slideshow.component';
 
 const appRoutes: Routes = [
   { path: 'info-card', component: InfoCardComponent }
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     NavigationComponent,
     BannerComponent,
     InfoCardComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    SlideshowComponent
   ],
   imports: [
     BrowserModule,
