@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(1641)https://resources.eyereturn.com/api/5049454/MAY-005-18OL03E_300x600_v1/MAY-005-18OL03E_300x600/300x600.html?tid=7176058&sid=6978974&guid=67964681146&clicktag=https%3A%2F%2Fvoken.eyereturn.com%2Fc%2F%3FtokenID%3D7176058%26iid%3D54dbfe25f58111e8a05bbdda22f9dffd%26oid%3D%26click%3Dhttps%253A%252F%252Fgoogleads.g.doubleclick.net%252Fdbm%252Fclk%253Fsa%253DL%2526ai%253DCPYZxnK4CXPOOIeCctOUPnZKL6A2HzeqAVP3f8vKNCIutxJqJEBABIOLKnFdg_dDwgMgDoAHeyOH1AsgBCakC4LfL1j0-qT6oAwGqBJYBT9A2a96ymYj3MbUPG7wo52xK-_8WeLZtHr3Ynb1Aojjr2YOEwWerEkBpr9275qOXKMengqVgmOtIc9DjsVfNETn3XPQbyxL8xeib5kGFtScV3xFX0mV50ph_69ZalLr5vNMd5xTc-9xawVQ6d-NT6qJyRoB4qOm9rf0f6yUY0AHgA5Hx8CsYj3jJZO5m3vD4z0C5Wouq4AQDkAYBoAZNgAeKt56KAYgHAZAHAqgHjs4bqAfVyRuoB7nSG6gH2csbqAfPzBuoB6a-G9gHANIIBggAEAIYAYAKA7AT_LW2BdATANgTAw%2526num%253D1%2526cid%253DCAMSeQClSFh3Da6DdPLkLC9Z4ytJtBknC9A7oCvHuMvChrRHGqF7InPQ-Y1xp2FTwN435fqSrI2-ppLY6O8rkMveCrln4r4dyiMShkXf10sX3in_K9R6cNgodAqd50oY4nuWdm0jB3B-1GRkOaKj8_BdDNPwtlT312snxm8%2526sig%253DAOD64_2o1tdIoR2H6tUoSlESMEXAznbsFA%2526client%253Dca-pub-7018263188568783%2526dbm_c%253DAKAmf-A-lQ4RKvuy0F2HgPwqhJnanYKcN3Y2B3Zpuqeu-amErI0TuMh6ATKTpTalWianZ_mZCQ2L%2526dbm_d%253DAKAmf-C6SNhEVW3qwjqhAa0z6EASlG2a9l6sMxVyrWcZUbTTRCQXGSV_1vx-_0qe2vVS3SaeSr5NYcM2bowQdEdV5ZgiVEXwRQQeG3UdP_G2GNkgTaHwOa0_ZVA5mOwd3X0bVBJYu9t5acS6nXUsnz-OCfsJevQn5ueWKHJOOILjQPJA0sPpVct1_YfngYoMfVMeZVFHek6JcABI4QxDjhaznn1T-3qf5dkwiMdLb4xdp7Ztkpo-O0_O6QHNmp9uNbkkMgDoxLKtmOfYJr-clVpzVZA3dadPfh-DWd-iSuvmRrxpdcMz9Sy_D-g8zfr2dWXQPAj8iRQmjKaEJEMcT5c49DkKYWmezrEjnrwTCzHaQ6DoKxB1dyU3fhSUCzBKruXrqUWHX6p_VNM0bT8Bci-p0BEmhYYqqh4f2msc9z8k4RjXDH9vCS0%2526adurl%253D%26cn%3D0&oob=undefined -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>300x600</title>
+<!-- write your code here -->
+<script type="text/javascript" src="./eyebuild_1_19.js.download"></script>
+<style>
+  #canvas {
+	position:absolute;
+	margin:auto;
+	left:0;right:0;
+	top:0;bottom:0;
+  }
+</style>
+<script src="./createjs-2015.11.26.min.js.download"></script>
+<script src="./300x600.js.download"></script>
+<script>
+var canvas, stage, exportRoot;
+function init() {
+	canvas = document.getElementById("canvas");
+	var comp=AdobeAn.getComposition("83284A8B5035484386342C88EF9729D4");
+	var lib=comp.getLibrary();
+	handleComplete({},comp);
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	exportRoot = new lib.MAY6906_300x600_2018AwarenessCampaign_Generic_OCT15_SS();
+	stage = new lib.Stage(canvas);
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}
+	//Code to support hidpi screens and responsive scaling.
+	function makeResponsive(isResp, respDim, isScale, scaleType) {		
+		var lastW, lastH, lastS=1;		
+		window.addEventListener('resize', resizeCanvas);		
+		resizeCanvas();		
+		function resizeCanvas() {			
+			var w = lib.properties.width, h = lib.properties.height;			
+			var iw = window.innerWidth, ih=window.innerHeight;			
+			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+			if(isResp) {                
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+					sRatio = lastS;                
+				}				
+				else if(!isScale) {					
+					if(iw<w || ih<h)						
+						sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==1) {					
+					sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==2) {					
+					sRatio = Math.max(xRatio, yRatio);				
+				}			
+			}			
+			canvas.width = w*pRatio*sRatio;			
+			canvas.height = h*pRatio*sRatio;
+			canvas.style.width = w*sRatio+'px';				
+			canvas.style.height = h*sRatio+'px';
+			stage.scaleX = pRatio*sRatio;			
+			stage.scaleY = pRatio*sRatio;			
+			lastW = iw; lastH = ih; lastS = sRatio;            
+			stage.tickOnUpdate = false;            
+			stage.update();            
+			stage.tickOnUpdate = true;		
+		}
+	}
+	makeResponsive(false,'both',false,1);
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+<!-- write your code here -->
+<script type="text/javascript">
+	eyeBuild.initialize();
+</script>
+</head>
+<body onload="init();" style="margin:0px;overflow:hidden;">
+	<a onclick="eyeBuild.doClick(0);">
+	<canvas id="canvas" width="600" height="1200" style="display: block; background-color: rgb(255, 255, 255); width: 300px; height: 600px;"></canvas>
+	</a>
+
+
+</body></html>

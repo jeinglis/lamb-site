@@ -1,9 +1,20 @@
 
 #content{
-  padding-top:200px;
+  display:flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
   color: white;
   font-size:1.7em;
-  margin:auto;
+  padding-top: 200px;
+}
+
+.card{
+  padding-top: 100px;
+}
+
+.top{
+  padding-top:100px;
 }
 
 img{
@@ -18,38 +29,76 @@ img{
 
 .left-media{
   background-color:rgba(0, 128, 0, 0.473);
+  float:left;
   width:60%;
   height:800px;
   margin-left:20px;
 }
 
 .left-info{
-  position: relative;
-  background-color:rgba(19, 119, 49, 0.616);
-  left: 1000px;
-  top: -750px;
+  position:absolute;
+  background-color:#773413a8;
+  right:55%;
+  margin-top:100px;
   width: 700px;
   height: 500px;
   z-index: 2;
 }
 
 .right-info{
-  position: relative;
+  position:absolute;
   background-color:rgba(19, 119, 49, 0.616);
-  /* left: 1000px; */
-  top: -750px;
+  left:55%;
+  margin-top:100px;
   width: 700px;
   height: 500px;
   z-index: 2;
 }
 
+.inline-info{
+  color: #771336;
+  float: right;
+  margin-top:100px;
+  width: 700px;
+  height: 500px;
+}
+
 .right-media{
   background-color:rgba(0, 128, 0, 0.473);
+  float:right;
+  margin-right:100px;
   width:60%;
   height:800px;
   margin-left:20px;
 }
 
 
+#buy_alberta{
+  float:left;
+  width:30%;
+  margin-left:20px;
+}
+
+.contact-info{
+  position:absolute;
+  background-color:#135977a1;
+  left:30%;
+  z-index: 2;
+}
+
+.mapouter{
+  position:absolute;
+  float:right;
+  margin-top:80px;
+  left:60%;
+
+  z-index: 2;
+}
+
+
+/* #137731 green
+#135977 blue
+#773413 brown
+#771336 purple */
 
 
