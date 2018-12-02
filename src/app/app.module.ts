@@ -8,10 +8,15 @@ import { InfoCardComponent } from './info-card/info-card.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
-import {SlideshowModule} from 'ng-simple-slideshow';
+import { SlideshowModule } from 'ng-simple-slideshow';
 
 const appRoutes: Routes = [
-  { path: 'info-card', component: InfoCardComponent }
+  {
+    path: '', component: InfoCardComponent
+  },
+  {
+    path: 'info-card', component: InfoCardComponent
+  }
 ];
 
 @NgModule({
@@ -27,11 +32,12 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true , // <-- debugging purposes only
-      scrollPositionRestoration: 'enabled',
-      anchorScrolling: 'enabled',
-      scrollOffset: [0, 10], // [x, y],
-      onSameUrlNavigation: 'reload'
+      {
+        enableTracing: true, // <-- debugging purposes only
+        scrollPositionRestoration: 'enabled',
+        anchorScrolling: 'enabled',
+        scrollOffset: [0, 10], // [x, y],
+        onSameUrlNavigation: 'reload'
       }
     ),
     SlideshowModule
