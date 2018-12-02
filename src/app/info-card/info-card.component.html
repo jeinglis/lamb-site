@@ -1,18 +1,17 @@
 <div id="content">
-  <div id="products" class="card top">
-    <div class="left-media" data-aos="fade-right">
-      <img src="../../assets/lamb-chops.jpg">
-    </div>
-    <app-slideshow></app-slideshow>
-    <div class="right-info" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+    <div id="products" class="card top" >
+        <div class="product-media">
+          <slideshow   [autoPlay]="true" [showArrows]="false" [imageUrls]="imageUrlArray"
+            [lazyLoad]="imageUrlArray?.length> 1" [autoPlayWaitForLazyLoad]="true" [showDots]="true" [autoPlayInterval]=4444>
+          </slideshow>
+        </div>
+        <div class="product-info" data-aos="fade-in">
       <span class="title">Products</span>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus neque diam,
-        id eleifend libero maximus in. Donec tincidunt mauris enim, a ultricies massa tristique a. Donec sit
-        amet erat diam. Suspendisse lorem mi, aliquet in pulvinar quis, tempor sit amet magna. Nunc lorem ante,
-        feugiat ac eros vitae, condimentum imperdiet ligula. Donec aliquet consectetur venenatis. Nunc sagittis
-        pulvinar accumsan.
-      </p>
+      <ul>
+          <li>Lamb Bits: $6/Lb</li>
+          <li>Lamb Lips: $5/Lb</li>
+          <li>Lamb Arseholes: $10/Lb</li>
+        </ul>
     </div>
   </div>
   <div id="raised_organic" class="card">
@@ -45,7 +44,7 @@
       </p>
     </div>
   </div>
-  <div id="support_local" class="card">
+  <div id="buy_local" class="card">
     <div class="left-media" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
       <img src="../../assets/piger-i-groentsagsmark.jpg">
     </div>
@@ -58,9 +57,6 @@
         feugiat ac eros vitae, condimentum imperdiet ligula. Donec aliquet consectetur venenatis. Nunc sagittis
         pulvinar accumsan.
       </p>
-      <div id="buy_alberta">
-        <img src="../../assets/buy_alberta.png">
-      </div>
     </div>
 
   </div>
