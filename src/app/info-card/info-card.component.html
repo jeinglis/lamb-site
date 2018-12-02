@@ -1,98 +1,102 @@
 <div id="content">
     <div id="products" class="card top" >
-        <div class="product-media">
-          <slideshow   [autoPlay]="true" [showArrows]="false" [imageUrls]="imageUrlArray"
-            [lazyLoad]="imageUrlArray?.length> 1" [autoPlayWaitForLazyLoad]="true" [showDots]="true" [autoPlayInterval]=4444>
-          </slideshow>
-        </div>
-        <div class="product-info" data-aos="fade-in">
-      <span class="title">Products</span>
-      <ul>
-          <li>Lamb Bits: $6/Lb</li>
-          <li>Lamb Lips: $5/Lb</li>
-          <li>Lamb Arseholes: $10/Lb</li>
-        </ul>
+      <div class="product-media">
+        <slideshow   [autoPlay]="true" [showArrows]="false" [imageUrls]="imageUrlArray"
+          [lazyLoad]="imageUrlArray?.length> 1" [autoPlayWaitForLazyLoad]="true" [showDots]="true" [autoPlayInterval]=4444>
+        </slideshow>
+      </div>
+      <div class="product-info" data-aos="fade-in">
+        <span class="title">Products</span>
+          <ul>
+            <li>Lamb Bits: $6/Lb</li>
+            <li>Lamb Lips: $5/Lb</li>
+            <li>Lamb Arseholes: $10/Lb</li>
+          </ul>
+      </div>
     </div>
+    <div id="raised_organic" class="card">
+      <div class="right-media">
+        <img src="../../assets/faar-cropped.jpg">
+      </div>
+      <div class="left-info">
+        <span class="title">Raised Organic</span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus neque diam,
+          id eleifend libero maximus in. Donec tincidunt mauris enim, a ultricies massa tristique a. Donec sit
+          amet erat diam. Suspendisse lorem mi, aliquet in pulvinar quis, tempor sit amet magna. Nunc lorem ante,
+          feugiat ac eros vitae, condimentum imperdiet ligula. Donec aliquet consectetur venenatis. Nunc sagittis
+          pulvinar accumsan.
+        </p>
+      </div>
+    </div>
+    <div id="ethically_treated" class="card">
+      <div class="left-media">
+        <img src="../../assets/dreng-med-ged.jpg">
+      </div>
+      <div class="right-info">
+        <span class="title">Ethically Treated</span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus neque diam,
+          id eleifend libero maximus in. Donec tincidunt mauris enim, a ultricies massa tristique a. Donec sit
+          amet erat diam. Suspendisse lorem mi, aliquet in pulvinar quis, tempor sit amet magna. Nunc lorem ante,
+          feugiat ac eros vitae, condimentum imperdiet ligula. Donec aliquet consectetur venenatis. Nunc sagittis
+          pulvinar accumsan.
+        </p>
+      </div>
+    </div>
+    <div id="buy_local" class="card">
+      <div class="right-media">
+        <img src="../../assets/piger-i-groentsagsmark.jpg">
+      </div>
+      <div class="red-info">
+        <span class="title">Buy Local</span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus neque diam,
+          id eleifend libero maximus in. Donec tincidunt mauris enim, a ultricies massa tristique a. Donec sit
+          amet erat diam. Suspendisse lorem mi, aliquet in pulvinar quis, tempor sit amet magna. Nunc lorem ante,
+          feugiat ac eros vitae, condimentum imperdiet ligula. Donec aliquet consectetur venenatis. Nunc sagittis
+          pulvinar accumsan.
+        </p>
+        <!-- <div id="buy_alberta">
+          <img src="../../assets/buy_alberta.png">
+        </div> -->
+      </div>
+  
+    </div>
+    <div id="contact_us" class="card">
+      <div class="left-media">
+        <img src="../../assets/lones-familie.jpg">
+      </div>
+      <div class="contact-info">
+        <span class="title">Contact Us</span>
+        <p>
+          <span>Phone: 1-403-564-8524</span>
+          <br>
+          <span>Email: RockyViewSpringLamb@gmail.com</span>
+          <br>
+          <span>Address: 453 HorseCreek Road Alberta</span>
+        </p>
+      </div>
+      <div class="mapouter">
+        <div class="gmap_canvas"><iframe width="700" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=horsecreek%20road&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/google-maps/">pureblack.de</a></div>
+        <style>
+          .mapouter {
+            text-align: right;
+            height: 600px;
+            width: 700px;
+          }
+  
+          .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 600px;
+            width: 700px;
+          }
+  
+        </style>
+      </div>
+    </div>
+  
   </div>
-  <div id="raised_organic" class="card">
-    <div class="left-media" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
-      <img src="../../assets/faar-cropped.jpg">
-    </div>
-    <div class="right-info" data-aos="fade-up">
-      <span class="title">Raised Organic</span>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus neque diam,
-        id eleifend libero maximus in. Donec tincidunt mauris enim, a ultricies massa tristique a. Donec sit
-        amet erat diam. Suspendisse lorem mi, aliquet in pulvinar quis, tempor sit amet magna. Nunc lorem ante,
-        feugiat ac eros vitae, condimentum imperdiet ligula. Donec aliquet consectetur venenatis. Nunc sagittis
-        pulvinar accumsan.
-      </p>
-    </div>
-  </div>
-  <div id="ethically_treated" class="card">
-    <div class="right-media" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-      <img src="../../assets/dreng-med-ged.jpg">
-    </div>
-    <div class="red-info" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
-      <span class="title">Ethically Treated</span>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus neque diam,
-        id eleifend libero maximus in. Donec tincidunt mauris enim, a ultricies massa tristique a. Donec sit
-        amet erat diam. Suspendisse lorem mi, aliquet in pulvinar quis, tempor sit amet magna. Nunc lorem ante,
-        feugiat ac eros vitae, condimentum imperdiet ligula. Donec aliquet consectetur venenatis. Nunc sagittis
-        pulvinar accumsan.
-      </p>
-    </div>
-  </div>
-  <div id="buy_local" class="card">
-    <div class="left-media" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
-      <img src="../../assets/piger-i-groentsagsmark.jpg">
-    </div>
-    <div class="right-info" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
-      <span class="title">Support Local</span>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus neque diam,
-        id eleifend libero maximus in. Donec tincidunt mauris enim, a ultricies massa tristique a. Donec sit
-        amet erat diam. Suspendisse lorem mi, aliquet in pulvinar quis, tempor sit amet magna. Nunc lorem ante,
-        feugiat ac eros vitae, condimentum imperdiet ligula. Donec aliquet consectetur venenatis. Nunc sagittis
-        pulvinar accumsan.
-      </p>
-    </div>
-
-  </div>
-  <div id="contact_us" class="card">
-    <div class="left-media" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-      <img src="../../assets/lones-familie.jpg">
-    </div>
-    <div class="contact-info" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine">
-      <span class="title">Contact Us</span>
-      <p>
-        <span>Phone: 1-403-564-8524</span>
-        <br>
-        <span>Email: RockyViewSpringLamb@gmail.com</span>
-        <br>
-        <span>Address: 453 HorseCreek Road Alberta</span>
-      </p>
-    </div>
-    <div class="mapouter" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-      <div class="gmap_canvas"><iframe width="700" height="600" id="gmap_canvas" src="https://maps.google.com/maps?q=horsecreek%20road&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/google-maps/">pureblack.de</a></div>
-      <style>
-        .mapouter {
-          text-align: right;
-          height: 600px;
-          width: 700px;
-        }
-
-        .gmap_canvas {
-          overflow: hidden;
-          background: none !important;
-          height: 600px;
-          width: 700px;
-        }
-
-      </style>
-    </div>
-  </div>
-
-</div>
+  
