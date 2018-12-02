@@ -30,7 +30,7 @@ const appRoutes: Routes = [
       { enableTracing: true , // <-- debugging purposes only
       scrollPositionRestoration: 'enabled',
       anchorScrolling: 'enabled',
-      scrollOffset: [0, 20], // [x, y],
+      scrollOffset: [0, 10], // [x, y],
       onSameUrlNavigation: 'reload'
       }
     ),
