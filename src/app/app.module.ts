@@ -8,21 +8,10 @@ import { InfoCardComponent } from './info-card/info-card.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
+import {SlideshowModule} from 'ng-simple-slideshow';
 
 const appRoutes: Routes = [
   { path: 'info-card', component: InfoCardComponent }
-  // { path: 'crisis-center', component: CrisisListComponent },
-  // { path: 'hero/:id',      component: HeroDetailComponent },
-  // {
-  //   path: 'heroes',
-  //   component: HeroListComponent,
-  //   data: { title: 'Heroes List' }
-  // },
-  // { path: '',
-  //   redirectTo: '/heroes',
-  //   pathMatch: 'full'
-  // },
-  // { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
@@ -41,10 +30,11 @@ const appRoutes: Routes = [
       { enableTracing: true , // <-- debugging purposes only
       scrollPositionRestoration: 'enabled',
       anchorScrolling: 'enabled',
-      scrollOffset: [0, 30], // [x, y],
+      scrollOffset: [0, 20], // [x, y],
       onSameUrlNavigation: 'reload'
       }
-    )
+    ),
+    SlideshowModule
   ],
   providers: [],
   bootstrap: [AppComponent]
