@@ -56,7 +56,7 @@ p{
 
 .right-info{
   position:absolute;
-  background-color:#771b13a2;
+  background-color:#135977a1;
   left:55%;
   margin-top:100px;
   width: 700px;
@@ -66,7 +66,7 @@ p{
 
 .red-info{
   position:absolute;
-  background-color:#137731a2;
+  background-color:#771b13a6;
   right:55%;
   margin-top:100px;
   width: 700px;
@@ -98,13 +98,6 @@ p{
   margin-right:100px;
   width:60%;
   height:800px;
-  margin-left:20px;
-}
-
-
-#buy_alberta{
-  float:left;
-  width:30%;
   margin-left:20px;
 }
 
