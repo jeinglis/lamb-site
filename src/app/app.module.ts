@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { BannerComponent } from './banner/banner.component';
 import { InfoCardComponent } from './info-card/info-card.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { SlideshowModule } from 'ng-simple-slideshow';
@@ -25,7 +24,6 @@ const appRoutes: Routes = [
     NavigationComponent,
     BannerComponent,
     InfoCardComponent,
-    ContactUsComponent,
   ],
   imports: [
     BrowserModule,
